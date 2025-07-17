@@ -15,4 +15,10 @@ public class HandTest {
         assertEquals(0, hand.lenght());
     }
 
+    @Test
+    public void shouldCreateHandWithString(){
+        Hand hand = new Hand("A♥","10♦","Q♣","J♥");
+        assertNotNull(hand);
+        assertEquals(4, hand.lenght());
+    }
 }
